@@ -1,0 +1,35 @@
+import { Component, inject, signal, ViewEncapsulation } from '@angular/core';
+import { RouterOutlet } from '@angular/router';
+import { Post } from './post/post';
+import { PostsService } from './services/posts';
+import { CommonModule, JsonPipe } from '@angular/common';
+
+@Component({
+  selector: 'app-root',
+  imports: [RouterOutlet, Post, CommonModule, JsonPipe],
+  templateUrl: './app.html',
+  encapsulation: ViewEncapsulation.ShadowDom,
+  styleUrls: [
+    '../../node_modules/the-new-css-reset/css/reset.css', 
+    '../../node_modules/bootstrap/dist/css/bootstrap.css',
+    './app.css']
+
+})
+export class App {
+  protected readonly title = signal('city-observer');
+
+  postsService = inject(PostsService);
+
+  posts$ = this.postsService.getPosts();
+
+  constructor() {
+    
+    this.postsService.getPosts().then(posts => {
+      console.log('Posts loaded:', posts);
+    }).catch(error => {
+      console.error('Error loading posts:', error);
+    });
+  }
+
+
+}

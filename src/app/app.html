@@ -1,0 +1,19 @@
+
+
+<main class="main">
+  <div class="content">
+
+    <div *ngIf="posts$ | async as posts">
+      <div *ngFor="let post of posts" class="post-container">
+        <app-post [post]="post"/>
+      </div>
+    </div>
+    
+
+  </div>
+</main>
+
+
+
+
+<router-outlet />

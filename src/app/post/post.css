@@ -1,0 +1,16 @@
+
+
+.card {
+    border: 1px solid gray;
+    border-radius: 8px;
+    padding: 8px;
+}
+
+.header {
+
+}
+
+.content-section {
+    gap: 10px;
+}
+
