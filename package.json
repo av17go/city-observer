@@ -1,12 +1,14 @@
 {
   "name": "city-observer",
   "version": "0.0.0",
+  "type": "module",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "ns": "nodemon server/index.js"
   },
   "prettier": {
     "overrides": [
@@ -26,7 +28,9 @@
     "@angular/forms": "^20.1.0",
     "@angular/platform-browser": "^20.1.0",
     "@angular/router": "^20.1.0",
+    "@atproto/api": "^0.17.0",
     "bootstrap": "^5.3.7",
+    "dotenv": "^17.2.3",
     "rxjs": "~7.8.0",
     "the-new-css-reset": "^1.11.3",
     "tslib": "^2.3.0",
@@ -43,6 +47,7 @@
     "karma-coverage": "~2.2.0",
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.1.0",
+    "nodemon": "^3.1.11",
     "typescript": "~5.8.2"
   }
 }

@@ -3,6 +3,7 @@ import { RouterOutlet } from '@angular/router';
 import { Post } from './post/post';
 import { PostsService } from './services/posts';
 import { CommonModule, JsonPipe } from '@angular/common';
+import { BskyAgentService } from './services/bsky-agent';
 
 @Component({
   selector: 'app-root',
@@ -19,6 +20,7 @@ export class App {
   protected readonly title = signal('city-observer');
 
   postsService = inject(PostsService);
+  bskyAgentService = inject(BskyAgentService);
 
   posts$ = this.postsService.getPosts();
 
@@ -29,6 +31,8 @@ export class App {
     }).catch(error => {
       console.error('Error loading posts:', error);
     });
+
+    this.bskyAgentService.getPosts();
   }
 
 
