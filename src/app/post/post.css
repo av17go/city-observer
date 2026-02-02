@@ -3,7 +3,7 @@
 .card {
     border: 1px solid gray;
     border-radius: 8px;
-    padding: 8px;
+    padding: var(--space-1);
 }
 
 .header {

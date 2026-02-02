@@ -1,0 +1,32 @@
+[
+  {
+    "title": "",
+    "content": "Warm up with a personal sun.",
+    "image": [
+      {
+        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:2ne7sc2wnu254aodqjapoxbd/bafkreia6r6qa3difa5r7g6t3rlbsobr7cw2hxbs6o5uqmvpasyfya622vi@jpeg",
+        "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:2ne7sc2wnu254aodqjapoxbd/bafkreia6r6qa3difa5r7g6t3rlbsobr7cw2hxbs6o5uqmvpasyfya622vi@jpeg",
+        "alt": "",
+        "aspectRatio": {
+          "height": 1500,
+          "width": 1999
+        }
+      }
+    ]
+  },
+  {
+    "title": "",
+    "content": "First test post",
+    "image": [
+      {
+        "thumb": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:2ne7sc2wnu254aodqjapoxbd/bafkreib3dtpwcz22x6e3epcwhwiwzgyi4dirftiwauq4arcwz4ji7xoxdi@jpeg",
+        "fullsize": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:2ne7sc2wnu254aodqjapoxbd/bafkreib3dtpwcz22x6e3epcwhwiwzgyi4dirftiwauq4arcwz4ji7xoxdi@jpeg",
+        "alt": "Empty napkin as a test picture.",
+        "aspectRatio": {
+          "height": 1500,
+          "width": 2000
+        }
+      }
+    ]
+  }
+]

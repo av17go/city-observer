@@ -2,12 +2,12 @@ import { Component, inject, signal, ViewEncapsulation } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { Post } from './post/post';
 import { PostsService } from './services/posts';
-import { CommonModule, JsonPipe } from '@angular/common';
+import { CommonModule } from '@angular/common';
 import { BskyAgentService } from './services/bsky-agent';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, Post, CommonModule, JsonPipe],
+  imports: [RouterOutlet, Post, CommonModule],
   templateUrl: './app.html',
   encapsulation: ViewEncapsulation.ShadowDom,
   styleUrls: [
@@ -22,7 +22,8 @@ export class App {
   postsService = inject(PostsService);
   bskyAgentService = inject(BskyAgentService);
 
-  posts$ = this.postsService.getPosts();
+  // posts$ = this.postsService.getPosts();
+  posts$ = this.bskyAgentService.getPosts();
 
   constructor() {
     
@@ -31,9 +32,6 @@ export class App {
     }).catch(error => {
       console.error('Error loading posts:', error);
     });
-
-    this.bskyAgentService.getPosts();
+    
   }
-
-
 }

@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import posts from './posts.json'; // Assuming posts.json is in the data folder
+import posts from '../../../public/posts.json';
 
 @Injectable({
   providedIn: 'root'

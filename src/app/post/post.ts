@@ -1,9 +1,9 @@
-import { JsonPipe } from '@angular/common';
+import { CommonModule } from '@angular/common';
 import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-post',
-  imports: [JsonPipe],
+  imports: [CommonModule],
   templateUrl: './post.html',
   styleUrl: './post.css'
 })

@@ -2,13 +2,16 @@
     <h2 class="header">
         {{post.title}}
     </h2>
-    <div class="d-flex content-section" >
-        <div><img [attr.src]="post.image" alt=""></div>
+    <div class="content-section" >
         <div>
             <p>
-                <!-- {{post | json }} -->
                 {{post.content}}
             </p>
+        </div>
+        <div>
+            <div *ngFor="let image of post.image">
+                <img [attr.src]="image.fullsize" [attr.alt]="image.alt">
+            </div>
         </div>
     </div>
 </div>
