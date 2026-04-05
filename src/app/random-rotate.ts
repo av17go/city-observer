@@ -8,7 +8,8 @@ export class RandomRotate {
 
   // add a random rotation to the element
   ngOnInit() {
-    const randomRotation = (Math.random() - 1) * 3.5; // random rotation between -4 and 0 degrees
+    // random rotation between -4 and 4 degrees
+    const randomRotation = (Math.random() * 8) - 4;
     this.el.nativeElement.style.transform = `rotate(${randomRotation}deg)`;
   }
 }
