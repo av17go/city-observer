@@ -1,13 +1,13 @@
-import { Component, inject, signal, ViewEncapsulation } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { Component, inject, signal, ViewChildren, ViewEncapsulation } from '@angular/core';
 import { Post } from './post/post';
 import { PostsService } from './services/posts';
 import { CommonModule } from '@angular/common';
 import { BskyAgentService } from './services/bsky-agent';
+import { RandomRotate } from './random-rotate';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, Post, CommonModule],
+  imports: [Post, CommonModule, RandomRotate],
   templateUrl: './app.html',
   encapsulation: ViewEncapsulation.ShadowDom,
   styleUrls: [
@@ -18,6 +18,8 @@ import { BskyAgentService } from './services/bsky-agent';
 })
 export class App {
   protected readonly title = signal('city-observer');
+
+  @ViewChildren('postContainer') postContainers: any;
 
   postsService = inject(PostsService);
   bskyAgentService = inject(BskyAgentService);

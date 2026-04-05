@@ -1,7 +1,7 @@
 
 
 .card {
-    border: 1px solid gray;
+    border: 3px solid lightgray;
     border-radius: 8px;
     padding: var(--space-1);
 }
@@ -12,4 +12,8 @@
 
 .content-section {
     gap: 10px;
+}
+
+.post-image {
+    border-radius: 8px;
 }

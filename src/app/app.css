@@ -5,10 +5,9 @@
 
     padding: var(--space-1);
     color: lightgray;
-    background-color: rgb(40, 40, 40);
-    border-radius: var(--space-1);
 }
 
 .post-container {
-    margin-bottom: 10px;
+    margin-bottom: 60px;
+    transform: rotate(random(-3deg, 3deg));
 }
