@@ -8,6 +8,6 @@
 }
 
 .post-container {
-    margin-bottom: 60px;
+    /* margin-bottom: 60px; */
     transform: rotate(random(-3deg, 3deg));
 }

@@ -8,7 +8,8 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "ns": "nodemon server/index.js"
+    "ns": "nodemon server/index.js",
+    "copy:footer-images": "node scripts/copy-footer-images.js"
   },
   "prettier": {
     "overrides": [

@@ -10,7 +10,7 @@
         </div>
         <div>
             <div *ngFor="let image of post.image">
-                <img [attr.src]="image.fullsize" [attr.alt]="image.alt" class="post-image"/>
+                <img [attr.src]="image.fullsize" [attr.alt]="image.alt" loading="lazy" class="post-image"/>
             </div>
         </div>
     </div>
