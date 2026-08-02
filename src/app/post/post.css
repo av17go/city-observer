@@ -12,6 +12,7 @@
 
 .content-section {
     gap: 10px;
+    margin-top: -4px;
 }
 
 .post-image {

@@ -4,10 +4,11 @@ import { PostsService } from './services/posts';
 import { CommonModule } from '@angular/common';
 import { BskyAgentService } from './services/bsky-agent';
 import { RandomRotate } from './random-rotate';
+import { FooterStuff } from './footer-stuff/footer-stuff';
 
 @Component({
   selector: 'app-root',
-  imports: [Post, CommonModule, RandomRotate],
+  imports: [Post, CommonModule, RandomRotate, FooterStuff],
   templateUrl: './app.html',
   encapsulation: ViewEncapsulation.ShadowDom,
   styleUrls: [
